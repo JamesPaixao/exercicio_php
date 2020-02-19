@@ -1,0 +1,122 @@
+.msg{
+    width: 100%;
+    height: 30px;
+    border: solid 3px black;
+    background-color: #346965;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: block;
+}
+.container{
+    width: 1400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+submenu_item a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+h1::selection{
+    background-color: rgb(171, 34, 24);
+}
+body{
+    min-height: 900px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../imagens/imagem_body.jpg);
+    background-repeat: no-repeat;
+}
+header{
+    background-color: #4a0101;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 35px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.submenu_item p{
+    color: white;
+    padding: 10px;
+    font: "Times New Roman";
+    font-size: 20px;
+}
+#menu{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(171, 34, 24);
+}
+#icone_menu{
+    width: 50px;
+    height: 50px;
+    background-image: url(../icones/icone.jpg);
+    /* Permie a imagem não se repetir */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#submenu{
+    width: 350px;
+    height: auto;
+    /* Efeito de transparência usando a densidade da cor */
+    background-color: rgba(171, 34, 24, 0.5);
+    margin-top: 50px;
+    /* Permite que o elemento se torne independente, podendo ser movimentado tendo como base somente o navegador */
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: -350px;
+    transition: 0.7s;
+    z-index: 2;
+}
+#icone_menu:hover > #submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+    transition: 1s;
+    cursor: pointer;
+}
+.submenu_item:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.submenu_item p:hover{
+    color: rgb(171, 34, 24);
+    font-weight: bolder;
+    cursor: pointer;
+}
+#conteudo{
+    width: 100%;
+    min-height: 900px;
+    height: auto;
+}
+#container_conteudo{
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px black;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #4a0101;
+    margin: 0px;
+    padding: 0px;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    font: "Times New Roman";
+    font-size: 25px;
+    padding: 10px;
+}
